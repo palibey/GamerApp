@@ -14,17 +14,6 @@ public class indexController {
 
     public indexController(GamerService gamerService) {
         this.gamerService = gamerService;
-        Gamer gamer = new Gamer();
-        Gamer gamer1 = new Gamer();
-        gamer1.setId(1L);
-        gamer1.setName("Friend");
-        Set<Gamer> set = new HashSet<>();
-        set.add(gamer1);
-        gamer.setId(2L);
-        gamer.setName("Gamer");
-        gamer.setFriends(set);
-        gamerService.save(gamer1);
-        gamerService.save(gamer);
 
     }
 
